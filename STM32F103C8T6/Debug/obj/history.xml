@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DSTM32F103C8 -DSTM32F10X_MD -DSUPPORT_CPLUSPLUS -IH:\YandexDisk\Project\CooCox\STM32F103ZE1\STM32F103ZE\stm_lib -IH:\YandexDisk\Project\CooCox\STM32F103ZE1\STM32F103ZE\cmsis_boot -IH:\YandexDisk\Project\CooCox\STM32F103ZE1\STM32F103ZE\stm_lib\inc -IH:\YandexDisk\Project\CooCox\STM32F103ZE1\STM32F103ZE -IH:\YandexDisk\Project\CooCox\STM32F103ZE1 -IH:\YandexDisk\Project\CooCox\STM32F103ZE1\STM32F103ZE\cmsis">
+      <target file="stm32f10x_adc.o" lastModified="15ddad42478">
+         <source file="..\..\..\stm_lib\src\stm32f10x_adc.c" lastModified="151e9e680bd"/>
+      </target>
+      <target file="stm32f10x_tim.o" lastModified="15ddad422e4">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="1518282c3c4"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="15ddad42312">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15182829266"/>
+      </target>
+      <target file="hd44780_driver.o" lastModified="15ddad4234f">
+         <source file="..\..\..\stm_lib\src\hd44780_driver.c" lastModified="15ddac121cc"/>
+      </target>
+      <target file="menu.o" lastModified="15ddad424e5">
+         <source file="..\..\..\stm_lib\src\menu.c" lastModified="15ddac123ee"/>
+      </target>
+      <target file="main.o" lastModified="15ddad423eb">
+         <source file="..\..\..\main.c" lastModified="15ddac126fb"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="15ddad424b6">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15ddad3fc2b"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="15ddad423bc">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15491289925"/>
+      </target>
+      <target file="match.o" lastModified="15ddad42fdd">
+         <source file="..\..\..\stm_lib\src\match.c" lastModified="15ddac0f0fb"/>
+      </target>
+      <target file="delay_.o" lastModified="15ddad42fcd">
+         <source file="..\..\..\stm_lib\src\delay_.c" lastModified="15ddac0f05f"/>
+      </target>
+      <target file="mode.o" lastModified="15ddad42f9e">
+         <source file="..\..\..\stm_lib\inc\mode.c" lastModified="15ddac12dde"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="15ddad4242a">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1518ac00d07"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="15ddad4237e">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="15ddad34743"/>
+      </target>
+      <target file="misc.o" lastModified="15ddad4301b">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="153092d4f32"/>
+      </target>
+   </processor>
+</history>

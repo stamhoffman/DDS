@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.4.1 -mcpu=cortex-m3 -mthumb -g -Map=STM32F103ZET6.map -O0 --gc-sections -lm -lgcc -lc -lstdc++ -LC:\CooCox\CoIDE\configuration\ProgramData\STM32F103C8T6 -TC:\CooCox\CoIDE\configuration\ProgramData\STM32F103C8T6/arm-gcc-link.ld -g">
+      <target file="STM32F103ZET6.elf" lastModified="15ddad431d0">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="15ddad422e4"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="15ddad42312"/>
+         <source file="..\obj\hd44780_driver.o" lastModified="15ddad4234f"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="15ddad4237e"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="15ddad423bc"/>
+         <source file="..\obj\main.o" lastModified="15ddad423eb"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="15ddad4242a"/>
+         <source file="..\obj\stm32f10x_adc.o" lastModified="15ddad42478"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="15ddad424b6"/>
+         <source file="..\obj\menu.o" lastModified="15ddad424e5"/>
+         <source file="..\obj\mode.o" lastModified="15ddad42f9e"/>
+         <source file="..\obj\delay_.o" lastModified="15ddad42fcd"/>
+         <source file="..\obj\match.o" lastModified="15ddad42fdd"/>
+         <source file="..\obj\misc.o" lastModified="15ddad4301b"/>
+      </target>
+   </processor>
+</history>
