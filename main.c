@@ -17,7 +17,6 @@ void UART_Config(void);
 
 #define TESTER        // TESTER/ProgBox
 #define QUARZ         //  QUARZ/RC
-#define STM32F103C8T6 // STM32F103ZET6/ STM32F103C8T6
 
 int main(void) {
   uint8_t mode = 0;
@@ -105,27 +104,7 @@ int main(void) {
       mode = 0;
       break;
 
-    case 3:
-      mode_matrix();
-      mode = 0;
-      break;
-
-    case 4:
-      mode_combo(mode_combo_number);
-      mode = 0;
-      break;
-
-    case 5:
-      mode_UART();
-      mode = 0;
-      break;
-
-    case 6:
-      test_sys();
-      mode = 0;
-      break;
-
-    case 7:
+     case 3:
       adjust();
       mode = 0;
       break;
@@ -269,3 +248,5 @@ void NVIC_Configuration(void) {
   delay_us(500);
   NVIC_EnableIRQ(USART3_IRQn);
 }
+
+

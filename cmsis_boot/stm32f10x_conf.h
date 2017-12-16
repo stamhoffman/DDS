@@ -21,11 +21,12 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __STM32F10x_CONF_H
 #define __STM32F10x_CONF_H
-#define STM32F103ZET6 // STM32F103ZET6/ STM32F103C8T6
+#define STM32F103C8T6 // STM32F103ZET6/ STM32F103C8T6
 #define no_OUT_UART // no_OUT_UART/OUT_UART
 
 /* Includes ------------------------------------------------------------------*/
 /* Uncomment the line below to enable peripheral header file inclusion */
+
 #include "stm32f10x_adc.h"
 /* #include "stm32f10x_bkp.h" */
 /* #include "stm32f10x_can.h" */
@@ -48,7 +49,7 @@
 #include "stm32f10x_tim.h"
 #include "stm32f10x_usart.h"
 #include "misc.h"
-
+#include "DDS.h"
 /* #include "stm32f10x_wwdg.h" */
 /* #include "misc.h" */ /* High level functions for NVIC and SysTick (add-on to CMSIS functions) */
 

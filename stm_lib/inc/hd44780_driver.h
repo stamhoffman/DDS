@@ -1,7 +1,10 @@
 #include "stm32F10x.h"
 
-#ifdef STM32F103ZET6
+//#ifdef STM32F103ZET6
+#define STM32F103C8T6
 /////should be defined by user /////
+
+#ifdef STM32F103ZET6
 #define LCD_PORT GPIOA
 #define LCD_CD 5
 #define LCD_EN 4
@@ -9,8 +12,8 @@
 #define LCD_DB5 1
 #define LCD_DB6 2
 #define LCD_DB7 3
-///////////////////////////////////
 #endif
+///////////////////////////////////
 
 #ifdef STM32F103C8T6
 #define LCD_PORT GPIOB
