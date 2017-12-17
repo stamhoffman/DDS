@@ -278,24 +278,21 @@ void GPIO_StructInit(GPIO_InitTypeDef* GPIO_InitStruct)
   *   This parameter can be GPIO_Pin_x where x can be (0..15).
   * @retval The input port pin value.
   */
-uint16_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
-  uint16_t bitstatus = 0x00;
+  uint8_t bitstatus = 0x00;
   
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
   assert_param(IS_GET_GPIO_PIN(GPIO_Pin)); 
   
-  uint32_t result = 0;
-  result = GPIOx->IDR & GPIO_Pin;
-
-  if (result != (uint32_t)Bit_RESET)
+  if ((GPIOx->IDR & GPIO_Pin) != (uint32_t)Bit_RESET)
   {
-    bitstatus = 1;
+    bitstatus = (uint8_t)Bit_SET;
   }
   else
   {
-    bitstatus = 0;
+    bitstatus = (uint8_t)Bit_RESET;
   }
   return bitstatus;
 }

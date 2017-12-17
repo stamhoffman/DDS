@@ -62,8 +62,8 @@
       <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
-      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
-      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="0"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F10x_MD_64.elf"/>
     </DebugOption>
@@ -104,8 +104,8 @@
     <File name="stm_lib/src/match.c" path="stm_lib/src/match.c" type="1"/>
     <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
     <File name="stm_lib/inc/DDS.h" path="stm_lib/inc/DDS.h" type="1"/>
-    <File name="stm_lib/src" path="" type="2"/>
     <File name="stm_lib/src/menu.c" path="stm_lib/src/menu.c" type="1"/>
+    <File name="stm_lib/src" path="" type="2"/>
     <File name="cmsis" path="" type="2"/>
     <File name="stm_lib" path="" type="2"/>
     <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>

@@ -107,7 +107,7 @@ typedef struct
 
 typedef enum
 { Bit_RESET = 0,
-  Bit_SET = 1
+  Bit_SET
 }BitAction;
 
 #define IS_GPIO_BIT_ACTION(ACTION) (((ACTION) == Bit_RESET) || ((ACTION) == Bit_SET))
@@ -350,7 +350,7 @@ void GPIO_DeInit(GPIO_TypeDef* GPIOx);
 void GPIO_AFIODeInit(void);
 void GPIO_Init(GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct);
 void GPIO_StructInit(GPIO_InitTypeDef* GPIO_InitStruct);
-uint16_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 uint16_t GPIO_ReadInputData(GPIO_TypeDef* GPIOx);
 uint8_t GPIO_ReadOutputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 uint16_t GPIO_ReadOutputData(GPIO_TypeDef* GPIOx);
