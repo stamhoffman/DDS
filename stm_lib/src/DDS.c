@@ -1,4 +1,5 @@
 #include "stm32f10x_conf.h"
+#include "mode.h"
 
 uint32_t calc_registr(double fraquent)
 {
@@ -42,7 +43,7 @@ void pack_send_mode_dds(uint8_t phase, uint8_t mux6_mode, uint8_t serial_mode, u
 
   if (serial_mode == 1) {
     uint8_t count;
-    for(count = 0; count < 8; count++, w0 =>> 1)
+    for(count = 0; count < 8; count++, w0 = w0 >> 1)
     {
       w0 = w0 & 1;
       GPIO_SetBits(DDS_PORT_CONTROL, DATA_);
@@ -57,7 +58,7 @@ void set_parallel_mode(void)
 {
   GPIO_SetBits(DDS_PORT_CONTROL, RESET);        //Reset DDS
   GPIO_ResetBits(DDS_PORT_CONTROL, RESET);
-  set_option_dds(0, 0, 0, 1);
+  pack_send_mode_dds(0, 0, 0, mux_clobal);
   send_data_parallel(0);
 }
 
@@ -66,7 +67,7 @@ void set_serial_mode(void)
 {
   GPIO_SetBits(DDS_PORT_CONTROL, RESET);        //Reset DDS
   GPIO_ResetBits(DDS_PORT_CONTROL, RESET);
-  set_option_dds(0, 0, 1, 1);
+  pack_send_mode_dds(0, 0, 1, mux_clobal);
   GPIO_SetBits(DDS_PORT_CONTROL, FQ_UD);     // Serial load Mode
   GPIO_ResetBits(DDS_PORT_CONTROL, FQ_UD);
   send_data_serial_mode(0);
@@ -78,7 +79,7 @@ void set_serial_mode(void)
 void send_data_serial_mode(uint32_t control_registr_dds)
 {
   int count;
-  for(count = 0; count < 32; count++, control_registr_dds =>> 1)
+  for(count = 0; count < 32; count++, control_registr_dds = control_registr_dds >> 1)
   {
     GPIO_SetBits(DDS_PORT_CONTROL, DATA_);
     GPIO_SetBits(DDS_PORT_CONTROL, W_CLK);

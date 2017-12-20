@@ -1,55 +1,55 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DSTM32F103C8 -DSTM32F10X_MD -IZ:\home\stam\workspace\DDS\cmsis_boot -IZ:\home\stam\workspace -IZ:\home\stam\workspace\DDS -IZ:\home\stam\workspace\DDS\stm_lib -IZ:\home\stam\workspace\DDS\cmsis -IZ:\home\stam\workspace\DDS\stm_lib\inc">
-      <target file="stm32f10x_adc.o" lastModified="160666cc830">
+      <target file="stm32f10x_adc.o" lastModified="16075d87333">
          <source file="..\..\..\stm_lib\src\stm32f10x_adc.c" lastModified="15f25c46136"/>
       </target>
-      <target file="syscalls.o" lastModified="160666ccd2c">
+      <target file="syscalls.o" lastModified="16075d878b3">
          <source file="..\..\..\syscalls\syscalls.c" lastModified="1603df659e6"/>
       </target>
-      <target file="stm32f10x_tim.o" lastModified="160666cbe18">
+      <target file="stm32f10x_tim.o" lastModified="16075d86783">
          <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="15f25c46136"/>
       </target>
-      <target file="system_stm32f10x.o" lastModified="160666cbf20">
+      <target file="system_stm32f10x.o" lastModified="16075d868cf">
          <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15f25c46132"/>
       </target>
-      <target file="hd44780_driver.o" lastModified="160666cc06c">
+      <target file="hd44780_driver.o" lastModified="16075d86a17">
          <source file="..\..\..\stm_lib\src\hd44780_driver.c" lastModified="15f25c46136"/>
       </target>
-      <target file="menu.o" lastModified="160666ccab0">
+      <target file="menu.o" lastModified="16075d87627">
          <source file="..\..\..\stm_lib\src\menu.c" lastModified="1603d629a3b"/>
       </target>
-      <target file="DDS.o" lastModified="160666cc6b8">
-         <source file="..\..\..\stm_lib\src\DDS.c" lastModified="160666cb4f0"/>
+      <target file="DDS.o" lastModified="16075d870d3">
+         <source file="..\..\..\stm_lib\src\DDS.c" lastModified="16075bd9ebe"/>
       </target>
-      <target file="stm32f10x_spi.o" lastModified="160666cd1b0">
+      <target file="stm32f10x_spi.o" lastModified="16075d87dc7">
          <source file="..\..\..\stm_lib\src\stm32f10x_spi.c" lastModified="16060c07bce"/>
       </target>
-      <target file="main.o" lastModified="160666cc434">
-         <source file="..\..\..\main.c" lastModified="1603dacdb11"/>
+      <target file="main.o" lastModified="16075d86dcf">
+         <source file="..\..\..\main.c" lastModified="16075b6ff24"/>
       </target>
-      <target file="stm32f10x_usart.o" lastModified="160666cc994">
+      <target file="stm32f10x_usart.o" lastModified="16075d874bb">
          <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15f25c46136"/>
       </target>
-      <target file="stm32f10x_gpio.o" lastModified="160666cc2fc">
+      <target file="stm32f10x_gpio.o" lastModified="16075d86c83">
          <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="16065cf62ea"/>
       </target>
-      <target file="match.o" lastModified="160666ccf40">
+      <target file="match.o" lastModified="16075d87ac3">
          <source file="..\..\..\stm_lib\src\match.c" lastModified="15f25c46136"/>
       </target>
-      <target file="delay_.o" lastModified="160666cce50">
+      <target file="delay_.o" lastModified="16075d879c3">
          <source file="..\..\..\stm_lib\src\delay_.c" lastModified="1603e36c59c"/>
       </target>
-      <target file="mode.o" lastModified="160666ccbfc">
-         <source file="..\..\..\stm_lib\inc\mode.c" lastModified="1603d737a68"/>
+      <target file="mode.o" lastModified="16075d8776f">
+         <source file="..\..\..\stm_lib\inc\mode.c" lastModified="16075d86147"/>
       </target>
-      <target file="stm32f10x_rcc.o" lastModified="160666cc5a0">
+      <target file="stm32f10x_rcc.o" lastModified="16075d86f7f">
          <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15f25c46136"/>
       </target>
-      <target file="startup_stm32f10x_md.o" lastModified="160666cc194">
+      <target file="startup_stm32f10x_md.o" lastModified="16075d86b2f">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="15f25c4612e"/>
       </target>
-      <target file="misc.o" lastModified="160666cd05c">
+      <target file="misc.o" lastModified="16075d87bef">
          <source file="..\..\..\stm_lib\src\misc.c" lastModified="15f25c46136"/>
       </target>
    </processor>

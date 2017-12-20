@@ -1,1 +1,1 @@
-exec "/bin/st-flash" "write" "Start.bin" "0x8000000"
+exec "/bin/st-flash" "write" "STM32F103ZET6.bin" "0x8000000"

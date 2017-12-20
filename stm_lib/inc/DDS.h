@@ -3,10 +3,10 @@
 #define DDS_PORT_CONTROL   GPIOB
 #define W_CLK      GPIO_Pin_0
 #define FQ_UD      GPIO_Pin_1
-#define DATA_      GPIO_Pin_2
-#define RESET      GPIO_Pin_3
+#define DATA_      GPIO_Pin_10
+#define RESET      GPIO_Pin_11
 
-#ifdef TYPE_CONTROL_PARALLEL
+//#ifdef TYPE_CONTROL_PARALLEL
 #define PORT_DATA_DDS GPIOA
 #define BIT_DATA_0 GPIO_Pin_4
 #define BIT_DATA_1 GPIO_Pin_5
@@ -17,7 +17,7 @@
 #define BIT_DATA_6 GPIO_Pin_10
 #define BIT_DATA_7 GPIO_Pin_11
 #define BIT_DATA_ALL (BIT_DATA_0 | BIT_DATA_1 | BIT_DATA_2 | BIT_DATA_3 | BIT_DATA_4 | BIT_DATA_5 | BIT_DATA_6 | BIT_DATA_7)
-#endif
+//#endif
 
 uint32_t calc_registr(double fraquent);
 void config_port_dds();

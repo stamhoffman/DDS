@@ -11,31 +11,28 @@ uint8_t push_mode = 0;
 void config_chanal_arm();
 
 
-void mode_open(uint8_t number_repetitions_regime_open) {
+void mode_jammers(double fraquent) {
   lcd_clear();
   lcd_set_xy(0, 0);
   lcd_out_char("JAMMERS");
   lcd_set_xy(0, 1);
   lcd_out_char("WORK");
 
-  double cyr_fraquent = 1000;
+  //double cyr_fraquent = 10000;
   uint32_t registr_32_bit;
-  registr_32_bit = calc_registr(cyr_fraquent);
+  registr_32_bit = calc_registr(fraquent);
   config_port_dds();
   set_serial_mode();
   send_data_serial_mode(registr_32_bit);
   lcd_set_xy(0,0);
   lcd_out_char("Fraquent = ");
   lcd_set_xy(0,1);
-  lcd_out_number(cyr_fraquent);
-  while(!GPIO_ReadInputDataBit(PORT_CAP, CAP_MODE))
-  {
-
-  };
+  lcd_out_number(fraquent);
+  while(!GPIO_ReadInputDataBit(PORT_CAP, CAP_MODE));
 }
 
 
-void mode_short() {
+void mode_broadbans(double broadbans) {
   lcd_clear();
   lcd_set_xy(0, 0);
   lcd_out_char("BROADBANS");
@@ -64,162 +61,90 @@ void adjust() {
     while (push_up_down == 0 && push_mode == 0) {
       lcd_clear();
       lcd_set_xy(0, 0);
-      lcd_out_char("Repetitions_OPEN");
-      lcd_set_xy(0, 1);
-      if (push_enter == 1) {
-        if (number_repetitions_regime_open == 0)
-          number_repetitions_regime_open = 1;
-        else
-          number_repetitions_regime_open = 0;
-      }
-      if (number_repetitions_regime_open == 0)
-        lcd_out_char("State:infinitely");
-      else
-        lcd_out_char("State:Once");
-      while (1) {
-        push_enter = GPIO_ReadInputDataBit(PORT_CAP, CAP_ENTER);
-        push_up_down = GPIO_ReadInputDataBit(PORT_CAP, CAP_UP_DOWN);
-        push_mode = GPIO_ReadInputDataBit(PORT_CAP, CAP_MODE);
-        if ((push_up_down == 1) || (push_enter == 1) || (push_mode == 1))
-          break;
-      }
-      delay_us(500);
-    }
-
-    push_up_down = 0;
-    push_enter = 0;
-
-    while (push_up_down == 0 && push_mode == 0) {
-      lcd_clear();
-      lcd_set_xy(0, 0);
-      lcd_out_char("matrix_for_validation");
+      lcd_out_char("FRAQUENT");
       lcd_set_xy(0, 1);
       if (push_enter == 1)
-        matrix_for_validation = ~matrix_for_validation;
-      if (matrix_for_validation == 0)
-        lcd_out_char("infinitely");
-      else
-        lcd_out_char("Once");
+    	  fraquent_global = fraquent_global + 500;
+      if (fraquent_global == 10000000)
+    	      fraquent_global = 1000;
+      lcd_out_number(fraquent_global);
+
       while (1) {
         push_enter = GPIO_ReadInputDataBit(PORT_CAP, CAP_ENTER);
+        if(push_enter == 1) break;
+        delay_us(100);
         push_up_down = GPIO_ReadInputDataBit(PORT_CAP, CAP_UP_DOWN);
+        if(push_up_down == 1) break;
+        delay_us(100);
         push_mode = GPIO_ReadInputDataBit(PORT_CAP, CAP_MODE);
-        if ((push_up_down == 1) || (push_enter == 1) || (push_mode == 1))
-          break;
+        delay_us(100);
+        if (push_mode == 1)  break;
       }
-      delay_us(300);
+
     }
 
     push_up_down = 0;
     push_enter = 0;
 
+
     while (push_up_down == 0 && push_mode == 0) {
       lcd_clear();
       lcd_set_xy(0, 0);
-      lcd_out_char("NUMB_BITS_SWITCH");
+      lcd_out_char("BROADBANS");
       lcd_set_xy(0, 1);
       if (push_enter == 1)
-        numb_bits = ++numb_bits;
-      if (numb_bits == MAX_CHANAL)
-        numb_bits = 0;
-      lcd_out_number(numb_bits);
+    	  broadbans = broadbans + 50;
+      if (broadbans == 10000000)
+    	  broadbans = 100000;
+      lcd_out_number(broadbans);
 
       while (1) {
         push_enter = GPIO_ReadInputDataBit(PORT_CAP, CAP_ENTER);
+        if(push_enter == 1) break;
+        delay_us(100);
         push_up_down = GPIO_ReadInputDataBit(PORT_CAP, CAP_UP_DOWN);
+        if(push_up_down == 1) break;
+        delay_us(100);
         push_mode = GPIO_ReadInputDataBit(PORT_CAP, CAP_MODE);
-        if ((push_up_down == 1) || (push_enter == 1) || (push_mode == 1))
-          break;
+        delay_us(100);
+        if (push_mode == 1)  break;
       }
-      delay_us(300);
+
     }
 
     push_up_down = 0;
     push_enter = 0;
 
     while (push_up_down == 0 && push_mode == 0) {
-      lcd_clear();
-      lcd_set_xy(0, 0);
-      lcd_out_char("adc_level_add");
-      lcd_set_xy(0, 1);
-      if (push_enter == 1)
-        adc_level_add = adc_level_add + 50;
-      if (adc_level_add == 2000)
-        adc_level_add = 0;
-      lcd_out_number(adc_level_add);
-
-      while (1) {
-        push_enter = GPIO_ReadInputDataBit(PORT_CAP, CAP_ENTER);
-        push_up_down = GPIO_ReadInputDataBit(PORT_CAP, CAP_UP_DOWN);
-        push_mode = GPIO_ReadInputDataBit(PORT_CAP, CAP_MODE);
-        if ((push_up_down == 1) || (push_enter == 1) || (push_mode == 1))
-          break;
-      }
-      delay_us(300);
-    }
-
-    push_up_down = 0;
-    push_enter = 0;
-
-    while (push_up_down == 0 && push_mode == 0) {
-      lcd_clear();
-      lcd_set_xy(0, 0);
-      lcd_out_char("set_option_push");
-      lcd_set_xy(0, 1);
-      if (push_enter == 1)
-        set_option_push = ++set_option_push;
-      if (numb_bits == 3)
-        set_option_push = 0;
-      lcd_out_number(set_option_push);
-
-      while (1) {
-        push_enter = GPIO_ReadInputDataBit(PORT_CAP, CAP_ENTER);
-        push_up_down = GPIO_ReadInputDataBit(PORT_CAP, CAP_UP_DOWN);
-        push_mode = GPIO_ReadInputDataBit(PORT_CAP, CAP_MODE);
-        if ((push_up_down == 1) || (push_enter == 1) || (push_mode == 1))
-          break;
-      }
-      delay_us(300);
-    }
-
-    push_up_down = 0;
-    push_enter = 0;
-
-    while (push_up_down == 0 && push_mode == 0) {
-      lcd_clear();
-      lcd_set_xy(0, 0);
-      lcd_out_char("type_test_signal");
-      lcd_set_xy(0, 1);
-      if (push_enter == 1) {
-        if (type_test_signal == 0) {
-          type_test_signal = 1;
-        } else {
-          if (type_test_signal == 1) {
-            type_test_signal = 0;
+          lcd_clear();
+          lcd_set_xy(0, 0);
+          lcd_out_char("mux_set");
+          lcd_set_xy(0, 1);
+          if (push_enter == 1) {
+            if (mux_clobal == 0) {
+            	      mux_clobal = 1;
+            } else {
+              if (mux_clobal == 1) {
+            	  mux_clobal = 0;
+              }
+            }
           }
-        }
-      }
 
-      if (type_test_signal == 0)
-        lcd_out_char("digit");
-      else
-        lcd_out_char("analog");
-      while (1) {
-        push_enter = GPIO_ReadInputDataBit(PORT_CAP, CAP_ENTER);
-        push_up_down = GPIO_ReadInputDataBit(PORT_CAP, CAP_UP_DOWN);
-        push_mode = GPIO_ReadInputDataBit(PORT_CAP, CAP_MODE);
-        if ((push_up_down == 1) || (push_enter == 1) || (push_mode == 1))
-          break;
-      }
-      delay_us(300);
+          if (mux_clobal == 0)
+            lcd_out_char("mux_off");
+          else
+            lcd_out_char("mux_on");
+          while (1) {
+            push_enter = GPIO_ReadInputDataBit(PORT_CAP, CAP_ENTER);
+            if(push_enter == 1) break;
+            delay_us(100);
+            push_up_down = GPIO_ReadInputDataBit(PORT_CAP, CAP_UP_DOWN);
+            if(push_up_down == 1) break;
+            delay_us(100);
+            push_mode = GPIO_ReadInputDataBit(PORT_CAP, CAP_MODE);
+            delay_us(100);
+            if (push_mode == 1)  break;
+          }
     }
   }
-
-  options[0] = number_repetitions_regime_open;
-  options[1] = matrix_for_validation;
-  options[2] = number_of_channels;
-  options[3] = pin_null;
-  options[4] = numb_bits;
-  options[5] = adc_level_add;
-  options[6] = adc_level_add;
 }

@@ -42,6 +42,15 @@ void adjust();
 	uint16_t adc_level_add;
 	uint8_t set_option_push;
 	uint8_t type_test_signal;
+	uint8_t mode_DDS;
+
+void mode_jammers(double fraquent);
+double fraquent_global;
+
+void mode_broadbans(double broadbans);
+double broadbans;
+
+uint8_t mux_clobal;
 
 void config_chanal_arm(void);
 void data_collection(void);

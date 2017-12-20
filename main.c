@@ -29,6 +29,11 @@ int main(void) {
   set_option_push = 0;
   mode_combo_number = 0;
   type_test_signal = 0; // 0 - digit, 1 - analog
+  mux_clobal = 0;
+
+  mode_DDS = 0; //0 - default(JAMMERS mode DDS), 1 - BROADBANS
+  fraquent_global = 1000;
+  broadbans = 100000;
 
 #ifdef TESTER
   RCC_Config();
@@ -37,7 +42,7 @@ int main(void) {
   lcd_init();
   // UART_Config();
   NVIC_Configuration();
-  ADC_Config();
+  //ADC_Config();
 #endif
 
 #ifdef ProgBox
@@ -95,12 +100,12 @@ int main(void) {
 
     switch (mode) {
     case 1:
-      mode_open(number_repetitions_regime_open);
+    	                   mode_jammers(fraquent_global);
       mode = 0;
       break;
 
     case 2:
-      mode_short();
+    	mode_broadbans(broadbans);
       mode = 0;
       break;
 
