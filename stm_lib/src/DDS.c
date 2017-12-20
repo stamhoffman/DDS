@@ -44,15 +44,24 @@ void config_port_dds() {
 #endif
 }
 
-void set_option_dds(uint8_t phase, uint8_t mux6_mode, uint8_t serial_mode,uint8_t power_down)
-{
-	uint8_t w0 = 0;
-	phase <<= 5;
-	serial_mode <<= 1;
-	power_down <<= 3;
-	w0 = w0 | phase | serial_mode |power_down;
-	GPIO_Write(PORT_DATA_DDS, w0);
+void set_option_dds(uint8_t phase, uint8_t mux6_mode, uint8_t serial_mode,
+                    uint8_t power_down) {
+  uint8_t w0 = 0;
+  phase <<= 5;
+  serial_mode <<= 1;
+  power_down <<= 3;
+  w0 = w0 | phase | serial_mode | power_down | mux6_mode;
+
+  if (serial_mode == 0) {
+    GPIO_Write(PORT_DATA_DDS, w0);
     GPIO_SetBits(DDS_PORT_CONTROL, W_CLK);
     GPIO_ResetBits(DDS_PORT_CONTROL, W_CLK);
+  }
+
+  if (serial_mode == 1) {
+    GPIO_SetBits(DDS_PORT_CONTROL, FQ_UD);
+    GPIO_ResetBits(DDS_PORT_CONTROL, FQ_UD);
+  }
 }
 
+void send_data_serial() {}
