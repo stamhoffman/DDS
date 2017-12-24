@@ -14,35 +14,30 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="DDS.c" partName="DDS.c" path="Z:/home/stam/workspace/DDS/stm_lib/src/DDS.c" title="DDS.c" tooltip="Z:/home/stam/workspace/DDS/stm_lib/src/DDS.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/STM32F103C8T6/stm_lib/src/DDS.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="989" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3168" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="DDS.h" partName="DDS.h" path="Z:/home/stam/workspace/DDS/stm_lib/inc/DDS.h" title="DDS.h" tooltip="Z:/home/stam/workspace/DDS/stm_lib/inc/DDS.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/STM32F103C8T6/stm_lib/inc/DDS.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="288" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="8" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="Z:/home/stam/workspace/DDS/main.c" title="main.c" tooltip="Z:/home/stam/workspace/DDS/main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/STM32F103C8T6/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="1985" selectionTopPixel="120"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="mode.c" partName="mode.c" path="Z:/home/stam/workspace/DDS/stm_lib/inc/mode.c" title="mode.c" tooltip="Z:/home/stam/workspace/DDS/stm_lib/inc/mode.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mode.c" partName="mode.c" path="Z:/home/stam/workspace/DDS/stm_lib/inc/mode.c" title="mode.c" tooltip="Z:/home/stam/workspace/DDS/stm_lib/inc/mode.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/STM32F103C8T6/stm_lib/src/mode.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="660" selectionTopPixel="110"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="442" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mode.h" partName="mode.h" path="Z:/home/stam/workspace/DDS/stm_lib/inc/mode.h" title="mode.h" tooltip="Z:/home/stam/workspace/DDS/stm_lib/inc/mode.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/STM32F103C8T6/stm_lib/inc/mode.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1124" selectionTopPixel="1470"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="Z:/home/stam/workspace/DDS/main.c" title="main.c" tooltip="Z:/home/stam/workspace/DDS/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/STM32F103C8T6/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2204" selectionTopPixel="1170"/>
 </editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="3">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="5">
 <expanded>
 <element path="/STM32F103C8T6"/>
 <element path="/STM32F103C8T6/cmsis"/>
@@ -53,9 +48,12 @@
 <element path="/STM32F103C8T6/syscalls"/>
 </expanded>
 <selection>
-<element path="/STM32F103C8T6/cmsis_boot/stm32f10x_conf.h"/>
+<element path="/STM32F103C8T6/main.c"/>
 </selection>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 </views>
 <perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
@@ -89,6 +87,7 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -107,14 +106,16 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1275d5b" ratio="0.65543646" ratioLeft="428" ratioRight="225" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1623e7a">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1275d5b" ratio="0.712098" ratioLeft="465" ratioRight="188" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1623e7a">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.20221402" ratioLeft="274" ratioRight="1081" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1623e7a"/>
+<info part="org.eclipse.ui.editorss" ratio="0.1690037" ratioLeft="229" ratioRight="1126" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1623e7a"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@f3d904" ratio="0.7113022" ratioLeft="1158" ratioRight="470" relationship="2" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
@@ -242,162 +243,163 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/stm_lib/src/mode.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/stm_lib/inc/mode.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/stm_lib/src/DDS.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/stm_lib/inc/DDS.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/cmsis_boot/stm32f10x_conf.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/stm_lib/src/mode.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/stm_lib/src/mode.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/stm_lib/inc/DDS.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/STM32F103C8T6/main.c"/>
 </editors>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="mode.c" index="2">
+<position info="not_deleted" x="412" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="1412" y="15"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="1319" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="791" y="0"/>
+<item historyLabel="mode.c" index="2">
+<position info="not_deleted" x="524" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="1412" y="15"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="1319" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="791" y="0"/>
+<item historyLabel="DDS.h" index="1">
+<position info="not_deleted" x="895" y="0"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="mode.c" index="2">
+<position info="not_deleted" x="669" y="1"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="715" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="2546" y="0"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="DDS.h" index="1">
+<position info="not_deleted" x="895" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="715" y="0"/>
+<item historyLabel="mode.c" index="2">
+<position info="not_deleted" x="669" y="1"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="1030" y="15"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="2868" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="1335" y="0"/>
+<item historyLabel="mode.c" index="2">
+<position info="not_deleted" x="931" y="0"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="1094" y="9"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="2868" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="2265" y="1"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="1407" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="821" y="0"/>
+<item historyLabel="mode.c" index="2">
+<position info="not_deleted" x="931" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="2271" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="2352" y="0"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="1094" y="9"/>
+<item historyLabel="mode.c" index="2">
+<position info="not_deleted" x="931" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="821" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="2952" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="1978" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1871" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1914" y="0"/>
+<item historyLabel="mode.c" index="2">
+<position info="not_deleted" x="524" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="1956" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="2952" y="0"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="1094" y="9"/>
+<item historyLabel="mode.c" index="4">
+<position info="not_deleted" x="527" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1914" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="3655" y="0"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="1030" y="15"/>
+<item historyLabel="DDS.h" index="5">
+<position info="not_deleted" x="895" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="714" y="0"/>
+<item historyLabel="mode.c" index="4">
+<position info="not_deleted" x="527" y="0"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="1156" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="3519" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="3076" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="1592" y="5"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="1114" y="10"/>
+<item historyLabel="DDS.h" index="5">
+<position info="not_deleted" x="8" y="19"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="698" y="10"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="2022" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="3272" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="1649" y="0"/>
 </item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="1124" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="1431" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="3272" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="1533" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="1056" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="1373" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="3725" y="0"/>
+<item historyLabel="mode.c" index="4">
+<position info="not_deleted" x="568" y="0"/>
 </item>
-<item historyLabel="DDS.c" index="3">
-<position info="not_deleted" x="2000" y="0"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="3168" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="698" y="10"/>
-</item>
-<item historyLabel="DDS.h" index="4">
-<position info="not_deleted" x="288" y="0"/>
-</item>
-<item historyLabel="DDS.c" index="3">
-<position info="not_deleted" x="2000" y="0"/>
-</item>
-<item historyLabel="stm32f10x_conf.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DDS.c" index="3">
-<position info="not_deleted" x="989" y="0"/>
-</item>
-<item historyLabel="mode.h" index="2">
-<position info="not_deleted" x="1124" y="0"/>
-</item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="3725" y="0"/>
-</item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="1695" y="0"/>
-</item>
-<item historyLabel="stm32f10x_conf.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="mode.c" index="1">
+<item historyLabel="mode.c" index="4">
 <position info="not_deleted" x="261" y="8"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1985" y="15"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="3168" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="261" y="8"/>
+<item historyLabel="main.c" index="6">
+<position info="not_deleted" x="1983" y="15"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1985" y="15"/>
+<item historyLabel="mode.c" index="4">
+<position info="not_deleted" x="637" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="261" y="8"/>
+<item historyLabel="main.c" index="6">
+<position info="not_deleted" x="2030" y="0"/>
 </item>
-<item historyLabel="mode.c" index="1">
-<position info="not_deleted" x="480" y="0"/>
+<item historyLabel="mode.c" index="4">
+<position info="not_deleted" x="698" y="0"/>
 </item>
-<item active="true" historyLabel="mode.c" index="1">
-<position info="not_deleted" x="635" y="28"/>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="3168" y="0"/>
+</item>
+<item historyLabel="main.c" index="6">
+<position info="not_deleted" x="1983" y="15"/>
+</item>
+<item historyLabel="mode.c" index="4">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="main.c" index="6">
+<position info="not_deleted" x="1983" y="15"/>
+</item>
+<item historyLabel="mode.c" index="4">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="DDS.c" index="0">
+<position info="not_deleted" x="3168" y="0"/>
+</item>
+<item historyLabel="DDS.h" index="5">
+<position info="not_deleted" x="8" y="19"/>
+</item>
+<item historyLabel="main.c" index="6">
+<position info="not_deleted" x="2204" y="0"/>
+</item>
+<item historyLabel="mode.c" index="4">
+<position info="not_deleted" x="442" y="14"/>
+</item>
+<item active="true" historyLabel="main.c" index="6">
+<position info="not_deleted" x="2204" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -406,6 +408,15 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_spi.c" tooltip="STM32F103C8T6/stm_lib/src/stm32f10x_spi.c">
+<persistable path="/STM32F103C8T6/stm_lib/src/stm32f10x_spi.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="STM32F103C8T6/main.c">
+<persistable path="/STM32F103C8T6/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mode.c" tooltip="STM32F103C8T6/stm_lib/src/mode.c">
+<persistable path="/STM32F103C8T6/stm_lib/src/mode.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_conf.h" tooltip="STM32F103C8T6/cmsis_boot/stm32f10x_conf.h">
 <persistable path="/STM32F103C8T6/cmsis_boot/stm32f10x_conf.h"/>
 </file>
@@ -414,12 +425,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="menu.c" tooltip="STM32F103C8T6/stm_lib/src/menu.c">
 <persistable path="/STM32F103C8T6/stm_lib/src/menu.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mode.c" tooltip="STM32F103C8T6/stm_lib/src/mode.c">
-<persistable path="/STM32F103C8T6/stm_lib/src/mode.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="STM32F103C8T6/main.c">
-<persistable path="/STM32F103C8T6/main.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="DDS.h" tooltip="STM32F103C8T6/stm_lib/inc/DDS.h">
 <persistable path="/STM32F103C8T6/stm_lib/inc/DDS.h"/>
@@ -442,6 +447,12 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_adc.h" tooltip="STM32F103C8T6/stm_lib/inc/stm32f10x_adc.h">
 <persistable path="/STM32F103C8T6/stm_lib/inc/stm32f10x_adc.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_conf.h" tooltip="STM32F103C8T6/cmsis_boot/stm32f10x_conf.h">
+<persistable path="/STM32F103C8T6/cmsis_boot/stm32f10x_conf.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mode.h" tooltip="STM32F103C8T6/stm_lib/inc/mode.h">
+<persistable path="/STM32F103C8T6/stm_lib/inc/mode.h"/>
 </file>
 </mruList>
 </workbench>

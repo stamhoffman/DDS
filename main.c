@@ -32,7 +32,7 @@ int main(void) {
   mux_clobal = 0;
 
   mode_DDS = 0; //0 - default(JAMMERS mode DDS), 1 - BROADBANS
-  fraquent_global = 1000;
+  fraquent_global = 50;
   broadbans = 100000;
 
 #ifdef TESTER
